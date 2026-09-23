@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Varka Notes</title>
+<meta name="description" content="Engineering notes from Varka, a research fork of Apache Spark that compiles a projection into one vector loop inside the JVM.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&family=Source+Sans+3:wght@600;700&display=swap">
+<style>
+:root{--bg:#fbfaf7;--fg:#1f2328;--muted:#5d6672;--accent:#6741d9;--rule:#e3ddd2}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#15171b;--fg:#e6e3dc;--muted:#a1a7b0;--accent:#b197fc;--rule:#2b2f36}}
+:root[data-theme="dark"]{--bg:#15171b;--fg:#e6e3dc;--muted:#a1a7b0;--accent:#b197fc;--rule:#2b2f36}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:Literata,Georgia,serif;font-size:18px;line-height:1.6}
+main{max-width:42rem;margin:0 auto;padding:4rem 16px 6rem}
+h1{font-family:"Source Sans 3",system-ui,sans-serif;font-size:2rem;margin:0 0 .4rem;letter-spacing:-.01em}
+.sub{color:var(--muted);margin:0 0 3rem}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+.post{display:block;border-top:1px solid var(--rule);padding:1.4rem 0}
+.post h2{font-family:"Source Sans 3",system-ui,sans-serif;font-size:1.25rem;margin:0 0 .3rem;color:var(--fg)}
+.post p{margin:0;color:var(--muted);font-size:.95rem}
+.date{font-size:.8rem;color:var(--muted);letter-spacing:.04em;text-transform:uppercase}
+footer{border-top:1px solid var(--rule);margin-top:3rem;padding-top:1.2rem;color:var(--muted);font-size:.9rem}
+</style></head>
+<body><main>
+<h1>Varka Notes</h1>
+<p class="sub">Vectorising Apache Spark's expressions inside the JVM.</p>
+
+<a class="post" href="eight-rows-per-instruction/">
+  <span class="date">23 September 2026</span>
+  <h2>Eight rows per instruction: Spark's TIME type on Varka's 64-bit lane</h2>
+  <p>What a row-at-a-time loop leaves on the table, what one emitted vector loop
+  does instead, and what the two cost per row on a machine whose datapath was
+  measured rather than assumed.</p>
+</a>
+
+<footer>The engine, the benchmarks and the sources of these pages are at
+<a href="https://github.com/vecbricks/varka">github.com/vecbricks/varka</a>.</footer>
+</main></body></html>

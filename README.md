@@ -14,3 +14,8 @@ what the repository says.
     dev/varka_post_page.py sql/varka/plans/POST_MILESTONE_5.md \
       --out <this repo>/eight-rows-per-instruction \
       --og-image https://vecbricks.github.io/eight-rows-per-instruction/card.png
+
+    dev/varka_post_page.py sql/varka/plans/POST_MILESTONE_6_SPARK.md \
+      --out <this repo>/the-8000-byte-cliff \
+      --og-image https://vecbricks.github.io/the-8000-byte-cliff/card.png
+

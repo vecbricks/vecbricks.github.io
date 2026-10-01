@@ -48,7 +48,9 @@ a fraction. Spark noticed, and said so in one line of its log, at a level the
 shell does not show.</p>
 <p>This post is about that step: where it is, how to see it on your own cluster,
 what to set, and which Spark release fixes which part. It is written for
-people who run Spark. A second post, to follow, covers the internals.</p>
+people who run Spark. A second post,
+<a href="https://vecbricks.github.io/under-8000-bytes-by-construction/">Under 8000 bytes by construction</a>,
+covers the internals.</p>
 <figure class="fig"><!--
   Licensed to the Apache Software Foundation (ASF) under one or more
   contributor license agreements.  See the NOTICE file distributed with
@@ -563,8 +565,9 @@ writes source cannot know how many bytes a method will be until the compiler
 tells it, and by then the method exists. An engine that emits bytecode
 directly can measure the method in the unit the JVM enforces before anything
 runs, and split or refuse on the number rather than on a guess. The second
-post in this pair, still to come, is about one that does; its code is already
-public, in <a href="https://github.com/vecbricks/varka">vecbricks/varka</a>.</p>
+post in this pair, <a href="https://vecbricks.github.io/under-8000-bytes-by-construction/">Under 8000 bytes by
+construction</a>, is about one that
+does; its code is public, in <a href="https://github.com/vecbricks/varka">vecbricks/varka</a>.</p>
 <p><em>How this was measured.</em> Every timing here is from a results file committed
 beside the post: the demo's outputs on stock Spark 4.2.0 with JDK 17, 21 and
 25, and four Spark-style benchmarks on builds of Spark master from September

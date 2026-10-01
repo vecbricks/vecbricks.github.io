@@ -19,3 +19,7 @@ what the repository says.
       --out <this repo>/the-8000-byte-cliff \
       --og-image https://vecbricks.github.io/the-8000-byte-cliff/card.png
 
+    dev/varka_post_page.py sql/varka/plans/POST_MILESTONE_6.md \
+      --out <this repo>/under-8000-bytes-by-construction \
+      --og-image https://vecbricks.github.io/under-8000-bytes-by-construction/card.png
+

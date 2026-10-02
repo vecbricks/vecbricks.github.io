@@ -23,3 +23,7 @@ what the repository says.
       --out <this repo>/under-8000-bytes-by-construction \
       --og-image https://vecbricks.github.io/under-8000-bytes-by-construction/card.png
 
+    dev/varka_post_page.py sql/varka/plans/POST_MILESTONE_6_GIVEUPS.md \
+      --out <this repo>/when-spark-stops-compiling-your-query \
+      --og-image https://vecbricks.github.io/when-spark-stops-compiling-your-query/card.png
+

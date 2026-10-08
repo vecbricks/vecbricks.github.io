@@ -162,7 +162,7 @@ is guarded where Spark splits a function out and is an ordinary compile error
 elsewhere. We went through <code>CodeGenerator.scala</code> and the operators for every
 place code generation gives up and found 34, each with Spark's side and Varka's
 pinned by a test wherever a query or a hand-built class can reach it; the
-<a href="https://github.com/vecbricks/varka/blob/master/sql/varka/plans/PLAN_TASK_188.md">census</a>
+<a href="https://github.com/vecbricks/varka/blob/master/sql/varka/plans/m6/VARKA-188.md">census</a>
 has the table, and <code>sql/testOnly *VarkaCodegenGiveUpSuite</code> runs it.</p>
 <p>How close does real work come to the line? Spark keeps a histogram of generated
 method sizes in <code>CodegenMetrics</code>, but it is a decaying sample of about a
@@ -432,8 +432,8 @@ in a forked JVM under <code>-XX:+PrintInlining</code>, and C2 says what it did w
 JDK lets you change. At 16 branches it inlines five of six split methods; at 300,
 11 of 101. Each refused method is compiled on its own, so the code is compiled
 and still pays a call per method for every row. The same refusals show inside a
-stage on apache/spark#59069, SPARK-33301's split of <code>CASE WHEN</code> there, still in
-review. Varka's calls are per batch, not per row, and the numbers in the next
+stage on apache/spark#59225, SPARK-33301's split of <code>CASE WHEN</code> there, merged on
+8 October 2026 for 4.4.0. Varka's calls are per batch, not per row, and the numbers in the next
 section include every one of them.</p>
 <p><em>A second limit sits below 8000 bytes. C1, HotSpot's first compiler, refuses a
 method of about a hundred Vector API calls whatever its bytes, and such a method

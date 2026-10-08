@@ -198,8 +198,8 @@ characters, and its own documentation says why: "We cannot know how many
 bytecode will be generated, so use the code length as metric." The setting
 that does measure bytecode, <code>spark.sql.codegen.hugeMethodLimit</code>, defaults to
 65535, a size no compiled method can exceed, so by default it never acts. The
-<a href="https://github.com/vecbricks/varka/blob/master/sql/varka/plans/PLAN_TASK_205.md">history of these limits</a>
-and a <a href="https://github.com/vecbricks/varka/blob/master/sql/varka/plans/PLAN_TASK_188.md">census of all 34 places</a>
+<a href="https://github.com/vecbricks/varka/blob/master/sql/varka/plans/m6/VARKA-205.md">history of these limits</a>
+and a <a href="https://github.com/vecbricks/varka/blob/master/sql/varka/plans/m6/VARKA-188.md">census of all 34 places</a>
 where Spark's code generation gives up are written up separately.</p>
 <p>The larger limit used to be the famous one. Spark's tracker holds 44 tickets
 that quote the compiler's "grows beyond 64 KB", 28 of them from 2016 and 2017,
@@ -518,7 +518,7 @@ query has run, for the reason section 3 gives, shows a <code>ColumnarToRow</code
 an <code>InMemoryTableScan</code> that produces batches, and none above one that does
 not. For the <code>CASE WHEN</code>, <code>EXPLAIN CODEGEN</code> and its header, as in section 3.</p>
 <h2>6. Which release fixes what</h2>
-<p>Read from the tracker on 26 September 2026.</p>
+<p>Read from the tracker on 26 September 2026; SPARK-33301's row on 8 October 2026.</p>
 <table>
 <thead>
 <tr>
@@ -546,7 +546,7 @@ not. For the <code>CASE WHEN</code>, <code>EXPLAIN CODEGEN</code> and its header
 <tr>
 <td>SPARK-33301</td>
 <td>a large <code>CASE WHEN</code> inside a stage is split into methods</td>
-<td>in review, <a href="https://github.com/apache/spark/pull/59069">apache/spark#59069</a></td>
+<td>fixed in 4.4.0, <a href="https://github.com/apache/spark/pull/59225">apache/spark#59225</a></td>
 </tr>
 <tr>
 <td>SPARK-56908</td>

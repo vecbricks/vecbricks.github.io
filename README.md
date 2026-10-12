@@ -27,3 +27,7 @@ what the repository says.
       --out <this repo>/when-spark-stops-compiling-your-query \
       --og-image https://vecbricks.github.io/when-spark-stops-compiling-your-query/card.png
 
+    dev/varka_post_page.py sql/varka/plans/m7/POST_CASE_WHEN_USERS.md \
+      --out <this repo>/split-only-where-it-has-to-be \
+      --og-image https://vecbricks.github.io/split-only-where-it-has-to-be/card.png
+

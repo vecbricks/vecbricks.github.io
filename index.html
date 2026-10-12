@@ -26,6 +26,14 @@ footer{border-top:1px solid var(--rule);margin-top:3rem;padding-top:1.2rem;color
 <h1>Varka Notes</h1>
 <p class="sub">Vectorising Apache Spark's expressions inside the JVM.</p>
 
+<a class="post" href="split-only-where-it-has-to-be/">
+  <span class="date">12 October 2026</span>
+  <h2>A large CASE WHEN, split only where it has to be</h2>
+  <p>The sequel to the cliff: Spark 4.4.0 splits a large <code>CASE WHEN</code> inside a
+  stage only where its method would pass 8000 bytes; why splitting everywhere costs, how to
+  see the fix, the settings it adds, and what to do before you can upgrade.</p>
+</a>
+
 <a class="post" href="when-spark-stops-compiling-your-query/">
   <span class="date">2 October 2026</span>
   <h2>When Spark stops compiling your query</h2>

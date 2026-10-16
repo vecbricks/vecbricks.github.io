@@ -31,3 +31,6 @@ what the repository says.
       --out <this repo>/split-only-where-it-has-to-be \
       --og-image https://vecbricks.github.io/split-only-where-it-has-to-be/card.png
 
+    dev/varka_post_page.py sql/varka/plans/m7/POST_BYTECODE.md \
+      --out <this repo>/the-class-got-cheaper \
+      --og-image https://vecbricks.github.io/the-class-got-cheaper/card.png

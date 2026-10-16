@@ -38,3 +38,7 @@ what the repository says.
     dev/varka_post_page.py sql/varka/plans/m7/POST_TRAP_SUMS.md \
       --out <this repo>/why-a-warmed-kernel-can-still-allocate \
       --og-image https://vecbricks.github.io/why-a-warmed-kernel-can-still-allocate/card.png
+
+    dev/varka_post_page.py sql/varka/plans/m7/POST_CODEGEN_NUMBERS.md \
+      --out <this repo>/nine-numbers \
+      --og-image https://vecbricks.github.io/nine-numbers/card.png

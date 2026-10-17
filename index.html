@@ -26,6 +26,14 @@ footer{border-top:1px solid var(--rule);margin-top:3rem;padding-top:1.2rem;color
 <h1>Varka Notes</h1>
 <p class="sub">Vectorising Apache Spark's expressions inside the JVM.</p>
 
+<a class="post" href="how-spark-compiles-a-query/">
+  <span class="date">17 October 2026</span>
+  <h2>How Spark compiles a query, and why it compiles it again</h2>
+  <p>Why a dashboard query with a new date runs about twice as slow as a rerun with the same
+  one: Spark writes the value into the code it generates, compiles the stage again, and keeps
+  only about a hundred classes in its cache.</p>
+</a>
+
 <a class="post" href="nine-numbers/">
   <span class="date">16 October 2026</span>
   <h2>Nine numbers between your query and machine code</h2>

@@ -42,3 +42,7 @@ what the repository says.
     dev/varka_post_page.py sql/varka/plans/m7/POST_CODEGEN_NUMBERS.md \
       --out <this repo>/nine-numbers \
       --og-image https://vecbricks.github.io/nine-numbers/card.png
+
+    dev/varka_post_page.py sql/varka/plans/m7/POST_COMPILES.md \
+      --out <this repo>/how-spark-compiles-a-query \
+      --og-image https://vecbricks.github.io/how-spark-compiles-a-query/card.png

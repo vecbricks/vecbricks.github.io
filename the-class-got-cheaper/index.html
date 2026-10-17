@@ -174,8 +174,9 @@ the literal into a slot, so both queries are one shape and run on one compiled c
 text. A dashboard that reruns <code>date_add(d, 7)</code> as <code>date_add(d, 30)</code> gets a new string, so a new
 Janino compile, so a new class that the JIT starts again from the interpreter. Spark already
 avoids this for strings, decimals and binary values, which it passes to the class as references
-instead of writing them into the text. A companion post that measures what the extra compiles
-cost on Spark follows.</p>
+instead of writing them into the text. <a href="https://vecbricks.github.io/how-spark-compiles-a-query/">How Spark compiles a query, and why it compiles it
+again</a> measures what the extra compiles
+cost on Spark.</p>
 <p>Varka's emitter takes a tree with every constant replaced by a slot. <code>date_add(d, 7), year(d)</code>
 and <code>date_add(d, 30), year(d)</code> are one shape with one hash, and run on one class with a different
 value in slot 0. So does the same pair over any other date column, because the tree says

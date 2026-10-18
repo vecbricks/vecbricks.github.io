@@ -46,3 +46,7 @@ what the repository says.
     dev/varka_post_page.py sql/varka/plans/m7/POST_COMPILES.md \
       --out <this repo>/how-spark-compiles-a-query \
       --og-image https://vecbricks.github.io/how-spark-compiles-a-query/card.png
+
+    dev/varka_post_page.py sql/varka/plans/m7/POST_TWO_QUEUES.md \
+      --out <this repo>/two-compilers-two-queues \
+      --og-image https://vecbricks.github.io/two-compilers-two-queues/card.png

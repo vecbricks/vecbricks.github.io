@@ -50,3 +50,7 @@ what the repository says.
     dev/varka_post_page.py sql/varka/plans/m7/POST_TWO_QUEUES.md \
       --out <this repo>/two-compilers-two-queues \
       --og-image https://vecbricks.github.io/two-compilers-two-queues/card.png
+
+    dev/varka_post_page.py sql/varka/plans/m8/POST_MATH_HOST.md \
+      --out <this repo>/your-sin-depends-on-your-jdk \
+      --og-image https://vecbricks.github.io/your-sin-depends-on-your-jdk/card.png

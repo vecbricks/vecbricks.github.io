@@ -26,6 +26,16 @@ footer{border-top:1px solid var(--rule);margin-top:3rem;padding-top:1.2rem;color
 <h1>Varka Notes</h1>
 <p class="sub">Vectorising Apache Spark's expressions inside the JVM.</p>
 
+<a class="post" href="strictmath-at-simd-speed/">
+  <span class="date">25 November 2026</span>
+  <h2>StrictMath at SIMD speed: the same bits as Spark's <code>exp</code>, <code>log</code> and <code>pow</code>, up to 11.79× faster</h2>
+  <p>vfdlibm 0.3.0 computes thirteen of fdlibm's functions on whole vectors, every lane with
+  <code>StrictMath</code>'s bits, which is what Spark returns for <code>exp</code>,
+  <code>ln</code> and <code>power</code>. Why that matters: on one Photon warehouse
+  <code>exp(1)</code> had two values in one query, and a million-row total differed from
+  Spark's.</p>
+</a>
+
 <a class="post" href="your-sin-depends-on-your-jdk/">
   <span class="date">9 November 2026</span>
   <h2>Your <code>sin()</code> depends on your JDK and your instruction set</h2>

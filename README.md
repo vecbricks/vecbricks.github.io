@@ -61,4 +61,11 @@ The post on vfdlibm 0.3.0 is built the same way from the vfdlibm repository, by 
     docs/blog/page.py --out <this repo>/strictmath-at-simd-speed \
       --og-image https://vecbricks.github.io/strictmath-at-simd-speed/card.png --card
 
-(then `card.png` from `card.html` by chromium, as that script's docstring says).
+The second vfdlibm post, from the same script:
+
+    docs/blog/page.py --source strictmath-not-frozen/2026-11-even-strictmath-is-not-frozen.md \
+      --out <this repo>/even-strictmath-is-not-frozen \
+      --og-image https://vecbricks.github.io/even-strictmath-is-not-frozen/card.png \
+      --card --card-figure pow-errors
+
+(then, for each, `card.png` from `card.html` by chromium, as that script's docstring says).

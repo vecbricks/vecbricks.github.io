@@ -26,6 +26,14 @@ footer{border-top:1px solid var(--rule);margin-top:3rem;padding-top:1.2rem;color
 <h1>Varka Notes</h1>
 <p class="sub">Vectorising Apache Spark's expressions inside the JVM.</p>
 
+<a class="post" href="even-strictmath-is-not-frozen/">
+  <span class="date">25 November 2026</span>
+  <h2>Even StrictMath is not frozen: JDK 27 changed <code>pow</code>'s bits, and it was right to</h2>
+  <p>The same Spark query returns another <code>power</code> on JDK 27 than on JDK 25: JDK 27
+  fixed <code>StrictMath.pow</code> errors of up to 653 ulps on one rare branch. How rare it is,
+  what else moved from JDK 21 to 27, and how often a math library's last bit changes a cent.</p>
+</a>
+
 <a class="post" href="strictmath-at-simd-speed/">
   <span class="date">25 November 2026</span>
   <h2>StrictMath at SIMD speed: the same bits as Spark's <code>exp</code>, <code>log</code> and <code>pow</code>, up to 11.79× faster</h2>
